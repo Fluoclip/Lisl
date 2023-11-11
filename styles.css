@@ -1,0 +1,102 @@
+/*  1rem = 16px */
+
+/* Signature Mobile */
+
+* body {
+  margin: 0;
+  padding: 0;
+}
+
+.signature-mini-block {
+  font-family: "Nunito", sans-serif;
+  width: 506px; /* changed */
+  height: 136px;
+  border-radius: 12px;
+  background: linear-gradient(0deg, #0e0a3b, #0e0a3b),
+    linear-gradient(180deg, rgba(89, 96, 246, 0.154) 0%, rgba(0, 0, 0, 0) 100%);
+  border: 2px solid red;
+}
+
+.signature-mini-container {
+  width: 194px;
+  height: 92px;
+  display: flex;
+  flex-direction: column;
+}
+
+.signature-mini-container a,
+.signature-mini-container .phone {
+  text-decoration: none;
+  color: #5960f6;
+}
+
+.signature-mini-container .signature-name {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 18px;
+  letter-spacing: 0.1em;
+  text-align: left;
+  color: #ff5f5f;
+  margin: 0;
+}
+
+.signature-mini-container .contact-info {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: 0.1em;
+  text-align: left;
+}
+
+.signature-mini-container .signature-job-title {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 18px;
+  letter-spacing: 0.1em;
+  text-align: left;
+  color: #5960f6;
+  margin-top: 0;
+}
+
+.signature-mini-container .contact-info {
+  margin: 0;
+}
+
+.signature-mini-logo img {
+  width: 87%;
+  margin-top: 1.2rem;
+  margin-left: 0;
+  z-index: -1;
+}
+
+.signature-mini-container {
+  position: relative;
+  top: -6rem;
+  left: 5rem;
+}
+
+.contact-info img {
+  margin-right: 0.2rem;
+}
+
+@media screen and (max-width: 300px) {
+  .signature-mini-container .signature-name {
+    font-size: 0.3rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .signature-mini-block {
+    width: 656px;
+    height: 199px;
+    border-radius: 12px;
+  }
+
+  .signature-mini-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+/* finishing the Desktop Version */
