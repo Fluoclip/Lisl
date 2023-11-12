@@ -2,26 +2,38 @@
 
 /* Signature Mobile */
 
-* body {
+* {
+  box-sizing: border-box;
+}
+
+body {
   margin: 0;
   padding: 0;
 }
 
 .signature-mini-block {
-  font-family: "Nunito", sans-serif;
-  width: 506px; /* changed */
-  height: 136px;
+  font-family: "Nunito", sans-serif; /* changed */
+  max-width: 586px;
   border-radius: 12px;
   background: linear-gradient(0deg, #0e0a3b, #0e0a3b),
     linear-gradient(180deg, rgba(89, 96, 246, 0.154) 0%, rgba(0, 0, 0, 0) 100%);
-  border: 2px solid red;
+  border: 2px solid dodgerblue; /* Test */
+  padding: 0.5rem;
+}
+
+.container {
+  position: relative;
+  width: 100%;
 }
 
 .signature-mini-container {
-  width: 194px;
-  height: 92px;
   display: flex;
   flex-direction: column;
+  border: 2px solid gold;
+  max-width: 90%;
+  top: 1rem;
+  left: 5rem;
+  position: absolute;
 }
 
 .signature-mini-container a,
@@ -32,7 +44,7 @@
 
 .signature-mini-container .signature-name {
   font-size: 14px;
-  font-weight: 600;
+  font-weight: 800;
   line-height: 18px;
   letter-spacing: 0.1em;
   text-align: left;
@@ -43,60 +55,149 @@
 .signature-mini-container .contact-info {
   font-size: 12px;
   font-weight: 500;
-  line-height: 16px;
-  letter-spacing: 0.1em;
+  line-height: 0.5rem;
+  margin-bottom: 0.5rem;
+  margin-top: 0;
+  letter-spacing: 0.1rem;
   text-align: left;
+  margin-bottom: 0.3rem;
+  display: flex;
+  align-items: center;
 }
 
 .signature-mini-container .signature-job-title {
   font-size: 12px;
   font-weight: 500;
-  line-height: 18px;
+  line-height: 12px;
   letter-spacing: 0.1em;
   text-align: left;
   color: #5960f6;
   margin-top: 0;
 }
 
-.signature-mini-container .contact-info {
-  margin: 0;
-}
-
 .signature-mini-logo img {
-  width: 87%;
-  margin-top: 1.2rem;
+  width: 90%;
   margin-left: 0;
   z-index: -1;
-}
-
-.signature-mini-container {
-  position: relative;
-  top: -6rem;
-  left: 5rem;
+  border: 2px solid red;
+  display: inline-block;
 }
 
 .contact-info img {
-  margin-right: 0.2rem;
+  margin-right: 0.7rem;
 }
 
-@media screen and (max-width: 300px) {
+@media screen and (min-width: 320px) and (max-width: 424px) {
+  .signature-mini-container-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    align-content: center;
+    gap: 1.5rem;
+    line-height: 1;
+  }
+
+  .signature-mini-container .signature-job-title {
+    margin: 0;
+  }
   .signature-mini-container .signature-name {
-    font-size: 0.3rem;
+    margin-top: 0rem;
+  }
+  .signature-mini-container {
+    top: 0.4rem;
+    left: 3.4rem;
+  }
+
+  .signature-mini-container .contact-info {
+    font-size: 0.7rem;
+    line-height: 0.5;
   }
 }
 
-@media screen and (min-width: 768px) {
-  .signature-mini-block {
-    width: 656px;
-    height: 199px;
-    border-radius: 12px;
+@media screen and (min-width: 425px) and (max-width: 480px) {
+  .signature-mini-container .contact-info {
+    font-size: 0.7rem;
+  }
+  .signature-mini-container .signature-job-title {
   }
 
   .signature-mini-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    top: 0.4rem;
+    left: 3.8rem;
   }
 }
 
-/* finishing the Desktop Version */
+@media screen and (min-width: 481px) and (max-width: 564px) {
+  .signature-mini-container .signature-name {
+    font-size: 0.7rem;
+  }
+
+  .signature-mini-container .signature-job-title {
+    font-size: 0.7rem;
+    font-weight: 600;
+  }
+
+  .signature-mini-container .contact-info {
+    font-size: 0.8rem;
+    line-height: 1;
+  }
+
+  .signature-mini-container {
+    top: 0.4rem;
+    left: 4.5rem;
+  }
+}
+
+@media screen and (min-width: 565px) {
+  .signature-mini-block {
+    padding-left: 3rem;
+  }
+
+  .signature-mini-container .signature-name {
+    font-size: 1rem;
+    text-transform: uppercase;
+  }
+
+  .signature-mini-container {
+    flex-direction: row;
+    gap: 4rem;
+    left: -0.9rem;
+    top: 0.6rem;
+    height: 90%;
+    width: 95%;
+  }
+
+  .signature-mini-container .signature-mini-container-header {
+    align-self: center;
+    position: relative;
+    top: -0.2rem;
+  }
+
+  .signature-mini-logo img {
+    width: 95%;
+  }
+
+  .signature-mini-container .contact-info {
+    font-size: 0.8rem;
+    font-weight: 600;
+    line-height: 1;
+    letter-spacing: 0.1em;
+    text-align: left;
+    display: flex;
+    align-items: center;
+  }
+
+  .signature-mini-container-content {
+    position: relative;
+    left: 1.7rem;
+  }
+
+  .signature-mini-container .contact-info img {
+    margin-right: 0.7rem;
+    margin-top: 0.2rem;
+  }
+
+  .signature-mini-container .contact-info:last-of-type img {
+    margin-bottom: 0rem;
+  }
+}

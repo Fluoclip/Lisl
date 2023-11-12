@@ -14,51 +14,86 @@
   </head>
   <body>
     <div class="signature-mini-block">
-      <div class="signature-mini-logo">
-        <picture>
-          <source
-            media="(min-width: 768px)"
-            srcset="
-              Assets%20Signatur%20SpotEn/Assets_desktop/SVG/Spotline__wLogo_d.svg
-            "
-          />
-          <img
-            src="/Assets%20Signatur%20SpotEn/Assets_mobile/SVG/Spotline_wLogo_m.svg"
-            alt="Logo"
-          />
-        </picture>
-      </div>
-      <div class="signature-mini-container">
-        <div class="signature-mini-container-header">
-          <p class="signature-name">Jochen Schwill</p>
-          <p class="signature-job-title">CEO</p>
+      <div class="container">
+        <div class="signature-mini-logo">
+          <picture>
+            <!--  <source
+              media="(min-width: 320px) and (max-width: 403px)"
+              srcset="Assets%20Signatur%20SpotEn/Assets_mobile/SVG/Logo.svg"
+            /> -->
+            <source
+              media="(min-width: 565px)"
+              srcset="
+                Assets%20Signatur%20SpotEn/Assets_desktop/SVG/Spotline__wLogo_d.svg
+              "
+            />
+            <img
+              src="/Assets%20Signatur%20SpotEn/Assets_mobile/SVG/Spotline_wLogo_m.svg"
+              alt="Logo"
+            />
+          </picture>
         </div>
-        <div class="signature-mini-container-content">
-          <p class="contact-info email">
-            <img
-              src="/Assets Signatur SpotEn/Assets_mobile/SVG/mail.svg"
-              alt=""
-            />
-            <a href="mailto:jochen@spotmyenergy.com">jochen@spotmyenergy.com</a>
-          </p>
-          <p class="contact-info website">
-            <img
-              src="/Assets Signatur SpotEn/Assets_mobile/SVG/link.svg"
-              alt=""
-            />
-            <a href="https://www.spotmyenergy.com" target="_blank"
-              >www.spotmyenergy.com</a
-            >
-          </p>
-          <p class="contact-info phone">
-            <img
-              src="/Assets Signatur SpotEn/Assets_mobile/SVG/mail.svg"
-              alt=""
-            />
-            +49 173 7517216
-          </p>
+        <div class="signature-mini-container">
+          <div class="signature-mini-container-header">
+            <p class="signature-name">Jochen&nbspSchwill</p>
+            <p class="signature-job-title">CEO</p>
+          </div>
+          <div class="signature-mini-container-content">
+            <p class="contact-info email">
+              <picture>
+                <source
+                  media="(min-width: 565px)"
+                  srcset="
+                    Assets%20Signatur%20SpotEn/Assets_desktop/SVG/mail.svg
+                  "
+                />
+                <img
+                  src="Assets%20Signatur%20SpotEn/Assets_mobile/SVG/mail.svg"
+                  alt="Logo"
+                />
+              </picture>
+              <a href="mailto:jochen@spotmyenergy.com"
+                >jochen@spotmyenergy.com</a
+              >
+            </p>
+            <p class="contact-info website">
+              <picture>
+                <source
+                  media="(min-width: 565px)"
+                  srcset="
+                    Assets%20Signatur%20SpotEn/Assets_desktop/SVG/link.svg
+                  "
+                />
+                <img
+                  class="first-image"
+                  src="Assets Signatur SpotEn/Assets_mobile/SVG/link.svg"
+                  alt="Logo"
+                />
+              </picture>
+              <a href="https://www.spotmyenergy.com" target="_blank"
+                >www.spotmyenergy.com</a
+              >
+            </p>
+            <p class="contact-info phone">
+              <picture>
+                <source
+                  media="(min-width: 565px)"
+                  srcset="
+                    Assets%20Signatur%20SpotEn/Assets_desktop/SVG/phone.svg
+                  "
+                />
+                <img
+                  src="Assets Signatur SpotEn/Assets_mobile/SVG/phone.svg"
+                  alt="Logo"
+                />
+              </picture>
+              +49 173 7517216
+            </p>
+            <div class="js-desktop-linkedIn"></div>
+          </div>
         </div>
       </div>
     </div>
+    <script src="/signature-js.js"></script>
   </body>
 </html>
