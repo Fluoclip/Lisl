@@ -17,7 +17,9 @@ function insertElements() {
         alt="Logo"
       />
     </picture>
-    Spot my Energy
+    <a href="https://www.linkedin.com/company/spot-my-energy/" target="_blank"
+    >www.spotmyenergy.com</a
+  >
   </p>
     `;
   } else {
